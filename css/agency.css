@@ -77,6 +77,18 @@ td, th {
     vertical-align: top;
 }
 
+#personatable td {
+  border: 1px solid black;
+}
+
+#personatable th {
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+
+
+
 #mainNav {
   background-color: #8fc7da; }
   #mainNav .navbar-toggler {
