@@ -74,6 +74,33 @@
             <br/>If you want to make an impact in the world, I would love to connect with you!<br/>
             <br/>Learn more about me below or check out my <a href="./marium_files/resume.pdf">resume</a>!
             </p>
+            <br/><br/>
+            <div class="row">
+            <div class="col-md-8 text-center">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="mailto:kirmani.marium@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/mariumkirmani">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/mariumk/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="./marium_files/resume.pdf">
+                    <i class="fa fa-file-text"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </div>
           <!-- <a href="#services" class="btn btn-xl">Tell Me More</a> -->
         </div>
       </div>
@@ -104,7 +131,7 @@
     </section>
     
     <!-- Rozelabs -->
-    <section id="portfolio">
+    <!-- <section id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-right">
@@ -125,10 +152,10 @@
             <img src="./marium_files/rozelabs-sq.png" alt="Rozelabs" style="width:100%">
           </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Tellspec -->
-    <section id="portfolio">
+    <!-- <section id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -146,7 +173,7 @@
             </ul>
           </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Harbour -->
     <section id="portfolio">
@@ -164,7 +191,7 @@
             </ul>
           </div>
           <div class="col-md-6">
-            <img src="./marium_files/harbour-sq.png" alt="Rozelabs" style="width:100%">
+            <img src="./marium_files/harbour-sq.png" alt="Harbour" style="width:100%">
           </div>
         </div>
     </section>
@@ -174,7 +201,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="./marium_files/clearspider-sq.png" alt="Rozelabs" style="width:100%">
+            <img src="./marium_files/clearspider-sq.png" alt="Clearspider" style="width:100%">
           </div>
           <div class="col-md-6 text-right">
             <h2 class="section-heading">Clearspider Redesign</h2>
@@ -182,7 +209,7 @@
             <p>Clearspider is a market leader in cloud-based inventory management softwares and held a 24 hour design challenge to build a better user experience. I redesigned the user interface and my team and I placed 4th.</p>
             <ul id="menu">
               <li>
-                <div class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                <div class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
              <a href="#">Read More</a>
             </div>
             </ul>
@@ -194,13 +221,30 @@
     <section id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <div class="col-lg-4 text-center">
+            <h2 class="section-heading">Where's Marium Today?</h2>
+          	<div id="map">
+          	</div>
+            <script>
+              function initMap() {
+              	var uluru = {lat: 24.841596, lng: 67.071913};
+               	var map = new google.maps.Map(document.getElementById('map'), {
+               		zoom: 4,
+               		center: uluru
+               	});
+               	var marker = new google.maps.Marker({
+               		position: uluru,
+               		map: map
+               	});
+               }
+            </script>
+            <script async defer 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6vFndrIYVJMHSp3xK2wIMscxWO_rfpyg&callback=initMap">
+            </script>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-heading">Reach Out to Me!</h2>
+            <h3 class="section-subheading">Let's make a difference together.</h3>
             <form id="contactForm" name="sentMessage" novalidate>
               <div class="row">
                 <div class="col-md-6">
@@ -239,37 +283,28 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Marium Kirmani 2017</span>
+          <div class="col-md-12">
+            <span class="copyright">Made with ❤️ and ☕️ by Marium &copy; 2017 🇵🇰 🇨🇦</span> 
+            <br/>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-12">
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
+                <li class="list-inline-item">
+                  <a href="mailto:kirmani.marium@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/mariumkirmani">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/mariumk/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
           </div>
         </div>
       </div>
@@ -613,138 +648,133 @@
                   
                   <h4>Personas</h4>
                   
-                  <h5/>Primary User
-                  <br/><br/>
+                  <h5>Primary User</h5>
+                  <br/>
                   <table id="personatable">
                     <tr>
-                      <td>
+                      <th>
+                        <img src="./marium_files/harbour/sarah.jpg" style="width: 50%">
                         <p/>Name: Sarah
-                      </td>
-                      <td>
+                      </th>
+                      <th>
                         <p/>Needs
-                      </td>
-                      <td>
+                      </th>
+                      <th>
                         <p/>Pains
-                      </td>
-                      <td>
+                      </th>
+                      <th>
                         <p/>Goals
-                      </td>
+                      </th>
                     </tr>
                     <tr>
-                      <td>
+                      <th>
                         <p/>Age: 29
-                      </td>
+                      </th>
                       <td rowspan="5">
                         <ul>
-                          <li/>Needs to bond with her team as she is a new employee
-                          <li/>Needs to sleep more as she often feels tired during the day
-                          <li/>Needs to have self-care goals as she tends to forget about them
+                          <li/><p/>Needs to bond with her team as she is a new employee
+                          <li/><p/>Needs to sleep more as she often feels tired during the day
+                          <li/><p/>Needs to have self-care goals as she tends to forget about them
                         </ul>
                       </td>
                       <td rowspan="5">
                         <ul>
-                          <li/>Does not have time to walk as much as her co-workers
-                          <li/>Does not spend time on self care as she overworks to get a promotion
+                          <li/><p/>Does not have time to walk as much as her co-workers
+                          <li/><p/>Does not spend time on self care as she overworks to get a promotion
                         </ul>
                       </td>
                       <td rowspan="5">
                         <ul>
-                          <li/>Make a good impression on her boss
-                          <li/>Be a valuable team player
+                          <li/><p/>Make a good impression on her boss
+                          <li/><p/>Be a valuable team player
                         </ul>
                       </td>
                     </tr>
-                    <!-- <tr>
-                      <td>
-                        <span style="vertical-align: center;"><img src="./marium_files/harbour/sarah.jpg" style="width: 50%">
-                        </span>
-                      </td>
-                    </tr> -->
                     <tr>
-                      <td>
+                      <th>
                         <p/>Occupation: Consultant at a large firm
-                      </td>
+                      </th>
                     </tr>
                     <tr>
-                      <td>
+                      <th>
                         <p/>Location: Toronto, ON
-                      </td>
+                      </th>
                     </tr>
                     <tr>
-                      <td>
+                      <th>
                         <p/>Marital Status: Single
-                      </td>
+                      </th>
                     </tr>
                     <tr>
-                      <td>
+                      <th>
                         <p/>Lifestyle: Sedentary 
-                      </td>
+                      </th>
                     </tr>
                   </table>
                   
                   <br/>
                   <br/>
-                  <h5/>Secondary User
-                  <br/><br/>
+                  <h5>Secondary User</h5>
+                  <br/>
                   <table id="personatable">
                     <tr>
-                      <td>
-                        <!-- <img src="./marium_files/harbour/george.jpg"> -->
+                      <th>
+                        <img src="./marium_files/harbour/george.jpg" style="width: 50%">
                         <p/>Name: George
-                      </td>
-                      <td>
+                      </th>
+                      <th>
                         <p/>Needs
-                      </td>
-                      <td>
+                      </th>
+                      <th>
                         <p/>Pains
-                      </td>
-                      <td>
+                      </th>
+                      <th>
                         <p/>Goals
-                      </td>
+                      </th>
                     </tr>
                     <tr>
-                      <td>
+                      <th>
                         <p/>Age: 57
-                      </td>
+                      </th>
                       <td rowspan="5">
                         <ul>
-                          <li/>Needs to walk over 10 miles every morning to prepare for the marathon
-                          <li/>Needs to have his employees be more productive and less absent
-                          <li/>Needs to spend time with his children every evening
+                          <li/><p/>Needs to walk over 10 miles every morning to prepare for the marathon
+                          <li/><p/>Needs to have his employees be more productive and less absent
+                          <li/><p/>Needs to spend time with his children every evening
                         </ul>
                       </td>
                       <td rowspan="5">
                         <ul>
-                          <li/>Does not have time to overlook each of his employees individually
-                          <li/>Does not want his employees to think self-care is a hard part of their job
+                          <li/><p/>Does not have time to overlook each of his employees individually
+                          <li/><p/>Does not want his employees to think self-care is a hard part of their job
                         </ul>
                       </td>
                       <td rowspan="5">
                         <ul>
-                          <li/>Have an effective, motivated team
-                          <li/>Have happy, healthy employees
+                          <li/><p/>Have an effective, motivated team
+                          <li/><p/>Have happy, healthy employees
                         </ul>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <th>
                         <p/>Occupation: Managing Partner at a Law Firm
-                      </td>
+                      </th>
                     </tr>
                     <tr>
-                      <td>
+                      <th>
                         <p/>Location: Toronto, ON
-                      </td>
+                      </th>
                     </tr>
                     <tr>
-                      <td>
+                      <th>
                         <p/>Marital Status: Married with 3 children
-                      </td>
+                      </th>
                     </tr>
                     <tr>
-                      <td>
+                      <th>
                         <p/>Lifestyle: Very Active 
-                      </td>
+                      </th>
                     </tr>
                   </table>
                   <br/>
@@ -831,71 +861,108 @@
                         <p/>Roles: UX/UI Designer
                       </td>
                       <td>
-                        <p/>Team: Marium Kirmani, William Nippard, Ben Che
+                        <p/>Team: Marium Kirmani, <a href="https://www.linkedin.com/in/williamnippard/">William Nippard</a>, <a href="http://ben-che.github.io/">Ben Che</a>
                       </td>
                     </tr>
                   </table>
                   <p/> Clearspider is a market leader in cloud-based inventory management softwares with over 100,000 companies using the product. Although Clearspider’s software has a very strong backend system, a system that has differentiated it from other products on the market, its less than ideal user interface and usability is a hindrance to its success. To build a better user experience, Clearspider held a 24 hour design challenge in partnership with Nspire. The challenge focused on redesigning their asset tracking, order management, and inventory optimization functionalities. My team and I placed 4th in this design competition.
+                  <br/><br/>
+                  <img src="./marium_files/clearspider/cover.png" style="width: 100%;">
 
                   
-                  <h4>Creation</h4>
-                  <p/>Throughout my university career I had been to over 20 hackathons, and each time the environment and process was similar. 
-                  You went in, there was an opening ceremony, and then you were told to create something, anything. 
-                  As someone who never had any coding background going to my first hackathon was a haunting, intimidating experience. 
-                  I felt a strong sense of an imposter syndrome, and never felt like I could approach someone with my skill set which was heavily focused on design and business. 
-                  When I talked to other frequent hackers not from a technical background, I realized that it was not only a me problem. 
-                  <br/><br/>I decided to talk to students and figure out why the hackathon culture was so persistent and how it could be changed. 
-                  I found that many students wanted to attend hackathons but felt too intimidated. Their top concerns were:
-                  <ol>
-                    <li/>They felt they were not good enough to contribute in a team
-                    <li/>They did not know where to begin to improve their skills
-                    <li/>They felt hackathons are only for those who can code
-                    <li/>They felt that since they were not in a technical program they were not included
-                    <li/>There was not enough support for beginners at hackathons
-                  </ol>
+                  <h4>Research</h4>
+                  <p/>To fully understand the user problems we first had to look at the current software. However, Clearspider did not provide their current software as they did not want to influence the design of the competitors. Although the intent behind this is understandable, from a research and problem solving point of view, this added to the challenge. In their outline they mentioned that there was a software bloat but never specified where. 
+                  <br/><br/>To fully understand an inventory management system, my team and I researched current solutions, such as IMS, and even Shopify, and found the following problems:
+                  <ul>
+                    <li/>Redundancy. Most of the systems had too many options on the page that were similar if not the same as other options, leading to the user being redirected to the same page through different commands
+                    <li/>Clutter. The pages were hard to look at it. There was too much information and no importance was given to anything.
+                    <li/>Lack of customization. The dashboards had too much information and the user could not change this information to what they needed/wanted.
+                  </ul>
                   <p/>My team and I wanted to alleviate these problems, because, as people who had been to a few hackathons, we realized their potential. 
                   Hackathons are fun! They are events where experiential learning is at an all time high and you can create not only cool projects, but great relationships.
                   <br/><br/>We then decided to create a hackathon that focused on a solution to these problems, and so StarterHacks was created. 
                   Prior to StarterHacks, we had a live document that we used to track all the good and bad things we witnessed at a hackathon. 
                   This helped us really hone in on what could be improved and what could be implemented into StarterHacks.
                   
-                  <h4>Value Proposition</h4>
-                  <p/>Our value proposition was simple, we were beginner friendly and we ensured that everyone felt welcomed. 
-                  To do this we created three categories that hackers could identify themselves in, design, development, and business. 
-                  Around these three categories we created three workshop streams that took place prior to when hacking began. 
-                  By holding workshops before hacking, participants did not have to figure out which to prioritize, learning or building. 
-                  This structure helped our participants to learn their skills before they implemented them ensuring that they understood 
-                  the importance of different roles in a team and that they were all on a similar footing for when hacking started.
-                  <br/><br/>We also showcased diversity of talent through our prize categories. 
-                  Instead of the traditional top 3, we went for Most Promising, Best Design, Best Pitch, Best Technology, and Mentor’s Choice. 
-                  This holistic approach helped us not only give out more prizes but acknowledge that the tech industry is more than just coding. 
+                  <h4>Personas</h4>
+                  <p/>To further understand the user experience, we mocked up a primary user persona.
                   
-                  <h4>Brand Creation & Marketing</h4>
-                  <p/>Our brand and logo was designed to keep in mind the welcoming approach. 
-                  We used a welcoming colour palette and our simple logo was made to be memorable. 
-                  The logo was a combination of light bulb, an almost universal sign for ideas, and a start icon, to signify us giving hackers a start. 
-                  In a similar vein, all our copy was written to invoke a warm feeling of welcome, maintaining a casual tone as well as a professional demeanour. 
-                  <br/><br/>To market StarterHacks, we tried to engage as many channels as we could. 
-                  Our team consisted of all Residence Life Dons, resident advisors for first year students, and so we ensured all students that lived at the 
-                  University of Waterloo residences knew about StarterHacks by requesting that all dons share the event to their floors. 
-                  We also used our connections with sponsors to advertise on their twitter pages and websites. 
-                  Furthermore, we were also listed as a Major League Hacking member event which helped us gain a large audience also. 
-                  Our main source of traction and marketing was Facebook. We utilised any and all Facebook groups we could think of including but not 
-                  limited to Frosh Groups, GBDA (Global Business and Digital Arts) Student Group, etc. We also implemented paid Facebook ads targeting students 16-28 in 
-                  Waterloo, Kitchener, London, and Greater Toronto Area.
-                  
-                  <h4>Event</h4>
-                  <p/>The event was held on March 11-12, 2017 at the University of Waterloo. 
-                  Our strength laid in our schedule structure that followed the steps of learn, implement, pitch; where students first attended the workshops, 
-                  then hacked and then pitched their products/ideas to our judges. 
-                  Our workshop speakers included Deloitte Digital Partner Jody McDermott, HealthIM CEO Daniel Pearson Hirdes and CTO Daniel Mackenzie, and Accelerator Centre’s Chase Denomme. 
-                  As for our judges, they were all workshop speakers with the addition of Wayne Chang and Emily Peat from Conrad.
+                  <br/>
+                  <table id="personatable">
+                    <tr>
+                      <td>
+                        <!-- <img src="./marium_files/harbour/george.jpg"> -->
+                        <p/>Name: Bob
+                      </td>
+                      <td>
+                        <p/>Needs
+                      </td>
+                      <td>
+                        <p/>Pains
+                      </td>
+                      <td>
+                        <p/>Goals
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p/>Age: 37
+                      </td>
+                      <td rowspan="6">
+                        <ul>
+                          <li/>Needs to needs to keep track of inbound and outbound shipments
+                          <li/>Needs to account for everything in their facility
+                          <li/>Needs to make sure they have enough, and not too much, of everything
+                        </ul>
+                      </td>
+                      <td rowspan="6">
+                        <ul>
+                          <li/>Does not have time to learn the new software
+                          <li/>Has to manage employees and would like to save time
+                        </ul>
+                      </td>
+                      <td rowspan="6">
+                        <ul>
+                          <li/>Ensure smooth running of the warehouse
+                          <li/>Never run out of anything the customers might order
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p/>Occupation: Warehouse Manager
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p/>Income: $50,000 annually
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p/>Location: Etobicoke, ON
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p/>Marital Status: Married with 1 child
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p/>Tech Experience: Minimal
+                      </td>
+                    </tr>
+                  </table>
+                  <br/><br/>
+
+                  <h4>Wireframes</h4>
+                  <p/>The focus of the wireframes was to ensure that the software was intuitive, customizable and had all the necessary information.
+                  <br/><br/>
+                  <img src="./marium_files/clearspider/wireframes.png" style="width: 100%;">
                   
                   <h4>Outcome</h4>
-                  <p/>Our final numbers wowed us all and we had a very successful event. 
-                  We were able to achieve our goals of diversity and beginners, as well as surpassing our initial goal of mentors. 
-                  We were also fully funded by our sponsors and received many in kind perks from our partners. 
-                  We were successful in building a community, a community we hope to work with in the many years to come. 
+                  <p/>The project had a lot of time constraints and the challenge is not something that can be accomplished in 24 hours. To fully realize the potential of Clearspider software there needs to extensive user research committed to the project, as well as deep analysis done of how the different users use the product.
 
                   <br/><br/>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
